@@ -1,0 +1,18 @@
+# https://github.com/actions/javascript-action
+
+name: 'Merge and Stop'
+description: 'Merge into branch without committing and pushing'
+author: 'Zennon Gosalvez'
+inputs:
+  method:
+    description: 'The merging method to use. Currently supports `` and `squash`. Optional. Default: ``'
+    default: ''
+  reference:
+    description: 'The branch/commit reference to merge into the current branch. For example, `origin/${{ github.head_ref }}`'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: git-merge
+  color: orange
