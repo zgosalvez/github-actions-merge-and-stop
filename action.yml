@@ -8,7 +8,7 @@ inputs:
     description: 'The merging method to use. Currently supports `` and `squash`. Optional. Default: ``'
     default: ''
   reference:
-    description: 'The branch/commit reference to merge into the current branch. For example, `origin/${{ github.head_ref }}`'
+    description: 'The branch/commit reference to merge into the current branch. For an example, see the README.md file
     required: true
 runs:
   using: 'node12'
