@@ -1567,11 +1567,11 @@ async function run() {
 
     switch (method) {
       case '':
-        mergeArgs = ['--no-squash']
+        mergeArgs.push('--no-squash');
         break;
 
       case 'squash':
-        mergeArgs = ['--squash']
+        mergeArgs.push('--squash');
         break;
 
       default:
