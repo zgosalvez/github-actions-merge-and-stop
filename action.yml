@@ -11,7 +11,7 @@ inputs:
     description: 'The branch/commit reference to merge into the current branch. For an example, see the README.md file'
     required: true
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
 branding:
   icon: git-merge
