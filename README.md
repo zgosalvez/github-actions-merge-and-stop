@@ -34,7 +34,7 @@ jobs:
           ref: ${{ github.base_ref }}
           fetch-depth: 0
       - name: Merge and stop
-        uses: zgosalvez/github-actions-merge-and-stop@v1
+        uses: zgosalvez/github-actions-merge-and-stop@v2
         with:
           method: squash
           reference: origin/${{ github.base_ref }}
